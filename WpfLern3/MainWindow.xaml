@@ -10,8 +10,18 @@
         <Border MinWidth="400" MaxWidth="550" Margin="15" VerticalAlignment="Center" 
                 Padding="40" Background="white" CornerRadius="35">
             <Border.Effect>
-                <DropShadowEffect BlurRadius="35" Color="LightGray" ShadowDepth="0"></DropShadowEffect>
+                <DropShadowEffect BlurRadius="35" Color="LightGray" ShadowDepth="0"/>
             </Border.Effect>
+            <StackPanel>
+                <TextBlock Text="Привет" FontSize="30" FontWeight="Bold" Margin="0 0 0 20"/>
+
+                <Grid Margin="0 0 0 20">
+                    <Button HorizontalAlignment="Left" Content="Регистрация"/>
+                    <Button HorizontalAlignment="Right" Content="Войти" 
+                            Style="{StaticResource MaterialDesignFlatButton}"/>
+
+                </Grid>
+            </StackPanel>
         </Border>
     </Grid>
 </Window>
