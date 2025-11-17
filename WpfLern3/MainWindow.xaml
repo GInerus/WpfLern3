@@ -3,6 +3,7 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
         xmlns:local="clr-namespace:WpfLern3"
         mc:Ignorable="d"
         Title="Приложение для пользователй" Height="600" Width="1000">
@@ -19,8 +20,14 @@
                     <Button HorizontalAlignment="Left" Content="Регистрация"/>
                     <Button HorizontalAlignment="Right" Content="Войти" 
                             Style="{StaticResource MaterialDesignFlatButton}"/>
-
                 </Grid>
+
+                <TextBox  materialDesign:HintAssist.Hint="Введите логин" Style="{StaticResource MaterialDesignFloatingHintTextBox}"/>
+                <PasswordBox  materialDesign:HintAssist.Hint="Введите пароль" Style="{StaticResource MaterialDesignFloatingHintPasswordBox}"/>
+                <PasswordBox  materialDesign:HintAssist.Hint="Повторите пароль" Style="{StaticResource MaterialDesignFloatingHintPasswordBox}"/>
+                <TextBox  materialDesign:HintAssist.Hint="Введите Email" Style="{StaticResource MaterialDesignFloatingHintTextBox}"/>
+
+                <Button Content="Зарегистрироваться" Margin="0 20 20 0" />
             </StackPanel>
         </Border>
     </Grid>
