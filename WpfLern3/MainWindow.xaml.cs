@@ -43,7 +43,7 @@ namespace WpfLern3
                 passwordBoxSecond.ToolTip = "Пороли не савподают";
                 passwordBoxSecond.Background = Brushes.DarkRed;
             }
-            else if (enteredEmail.Length > 6 || enteredEmail.Contains("@") || enteredEmail.Contains("."))
+            else if (enteredEmail.Length > 6 || !enteredEmail.Contains("@") || !enteredEmail.Contains("."))
             {
                 textBoxEmail.ToolTip = "Поле заполнено неверно";
                 textBoxEmail.Background = Brushes.DarkRed;
