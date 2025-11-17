@@ -5,8 +5,13 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfLern3"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-
+        Title="Приложение для пользователй" Height="600" Width="1000">
+    <Grid Background="#0d1117">
+        <Border MinWidth="400" MaxWidth="550" Margin="15" VerticalAlignment="Center" 
+                Padding="40" Background="white" CornerRadius="35">
+            <Border.Effect>
+                <DropShadowEffect BlurRadius="35" Color="LightGray" ShadowDepth="0"></DropShadowEffect>
+            </Border.Effect>
+        </Border>
     </Grid>
 </Window>
